@@ -1,6 +1,11 @@
 // Button.js
 
-import PropTypes from 'prop-types';
+// import PropTypes; // Remove this line
+
+// Define your Button component here
+function Button() {
+  // Component logic goes here
+}
 import { useState } from 'react';
 
 const Button = ({ onClick, label, color, disabled }) => {
@@ -22,6 +27,16 @@ const Button = ({ onClick, label, color, disabled }) => {
     if (onClick && !disabled) {
       onClick();
     }
+  };
+
+  // Function to darken a color by a specified percentage
+  const darkenColor = (color, percent) => {
+    const num = parseInt(color.slice(1), 16);
+    const amt = Math.round(2.55 * percent);
+    const R = (num >> 16) - amt;
+    const G = ((num >> 8) & 0x00FF) - amt;
+    const B = (num & 0x0000FF) - amt;
+    return `#${(1 << 24 | R << 16 | G << 8 | B).toString(16).slice(1)}`;
   };
 
   return (
@@ -50,16 +65,6 @@ Button.propTypes = {
 Button.defaultProps = {
   color: '#3498db',
   disabled: false,
-};
-
-// Function to darken a color by a specified percentage
-const darkenColor = (color, percent) => {
-  const num = parseInt(color.slice(1), 16);
-  const amt = Math.round(2.55 * percent);
-  const R = (num >> 16) - amt;
-  const G = (num >> 8 & 0x00FF) - amt;
-  const B = (num & 0x0000FF) - amt;
-  return `#${(1 << 24 | R << 16 | G << 8 | B).toString(16).slice(1)}`;
 };
 
 export default Button;

@@ -23,6 +23,15 @@ const Header = () => {
       </div>
       <div className={`overlay ${isMenuOpen ? 'overlay-open' : ''}`} onClick={toggleMenu} />
     </header>
+      <script>
+    // JavaScript function to toggle the dropdown menu and overlay
+    function toggleDropdown() {
+      var dropdownMenu = document.getElementById('dropdownMenu');
+      var overlay = document.getElementById('overlay');
+      dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+      overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
   );
 };
 

@@ -38,6 +38,7 @@
     
     .bar-open:nth-child(3) {
         transform: rotate(45deg) translate(-7px, -6px);
+        color: rgba(255, 255, 255, 0.7); /* Change color on hover */
     }
     
     .overlay {
@@ -54,7 +55,40 @@
     .overlay-open {
         display: block;
     }
-    
+        .dropdown-item {
+      margin-left: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.dropdown-item:hover {
+  background-color: rgba(106, 125, 166); /* Change background color on hover */
+  padding-left: 20px;
+  border-radius: 50px; /* Add border radius on hover */
+}
+
+.dropdown-item:active {
+  background-color: rgba(77, 53, 91); /* Change background color on press */
+}
+    /* Media query for responsiveness */
+    @media only screen and (max-width: 768px) {
+      .header {
+        padding: 0 10px; /* Adjust padding for smaller screens */
+      }
+
+      .dropdown-menu {
+        width: 100%;
+      }
+
+      .dropdown-item {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
     /* Media query for smaller screens (e.g., mobile) */
     @media screen and (max-inline-size: 768px) {
         .header {
@@ -65,3 +99,15 @@
             display: none; /* Hide the overlay on larger screens */
         }
     }
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

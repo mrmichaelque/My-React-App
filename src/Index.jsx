@@ -3,7 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import 'styles/Index.scss';
 import { createStore } from 'your-store-library'; // Import your store library
-import App from './App';
+import App from './Landing-page';
 import { withHover, withRandomColor, withRotate } from './animationHelpers'; // Import animation helpers
 
 import reportWebVitals from './reportWebVitals';

@@ -1,7 +1,7 @@
 // Button.js
 
 import PropTypes from 'prop-types';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const Button = ({ onClick, label, color, disabled }) => {
   const [isPressed, setIsPressed] = useState(false);

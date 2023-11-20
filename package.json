@@ -1,5 +1,5 @@
 {
-  "homepage": "https://michaelque.github.io/My-React-App",
+  //homepage:https://michaelque.github.io/My-React-App//
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -28,12 +28,12 @@
   "start": "react-scripts start",
   "build": "react-scripts build"
 },
-  },
+},
   "eslintConfig": {
-    "extends": [
+    "extends": {
       "react-app",
       "react-app/jest"
-    ]
+    }
   },
   "browserslist": {
     "production": [

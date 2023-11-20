@@ -66,5 +66,55 @@ Button.defaultProps = {
   color: '#3498db',
   disabled: false,
 };
+        }
 
+        .button {
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #6a7da6;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #815998;
+        }
+
+        .button:active {
+            background-color: #3e264c;
+        }
+
+        hr {
+            margin-top: 50px;
+        }
+
+        .letter-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .letter-buttons button {
+            margin: 0 10px;
+            font-size: 18px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            background-color: #6a7da6;
+            color: #fff;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .letter-buttons button:hover {
+            background-color: #815998;
+        }
+
+        .letter-buttons button:active {
+            background-color: #3e264c;
+        }
 export default Button;

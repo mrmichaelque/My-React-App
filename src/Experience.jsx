@@ -1,5 +1,5 @@
 // App.js
-import Timeline from './Timeline';
+import Timeline from './Experience';
 
     const eventsData = [
       {

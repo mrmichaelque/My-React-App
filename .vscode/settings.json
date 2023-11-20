@@ -1,3 +1,4 @@
 {
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "html-to-css-autocompletion.autocompletionFilesScope": "linked-files"
 }

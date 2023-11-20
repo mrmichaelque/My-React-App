@@ -1,6 +1,7 @@
 import React from 'react';
-import './App.css';
-import logo from './logo.svg';
+import 'styles/App.scss';
+import MyFooter from './components/Footer.js'; // Renamed the imported Footer component
+import Header from './components/Header.js';
 
 class App extends React.Component {
   constructor(props) {
@@ -20,14 +21,22 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-        </header>
+      <div>
+        <Header />
         <p>{this.state.apiResponse}</p>
+        <p>My App</p>
+        <MyFooter /> {/* Use the renamed component here */}
       </div>
     );
   }
+}
+
+function Footer() {
+  return (
+    <div>
+      {/* Footer content goes here */}
+    </div>
+  );
 }
 
 export default App;

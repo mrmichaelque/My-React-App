@@ -1,0 +1,67 @@
+.header {
+    // Add your styles here
+}
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #3498db; /* Header background color */
+        color: #fff; /* Text color */
+        block-size: 150px; /* Height */
+        position: relative;
+    }
+    
+    .logo {
+        block-size: 100%; /* Height */
+        inline-size: auto; /* Width */
+    }
+    
+    .menu-icon {
+        cursor: pointer;
+    }
+    
+    .bar {
+        block-size: 4px; /* Height */
+        inline-size: 30px; /* Width */
+        background-color: #fff;
+        margin: 6px 0;
+        transition: transform 0.3s;
+    }
+    
+    .bar-open {
+        transform: rotate(-45deg) translate(-7px, 6px);
+    }
+    
+    .menu-open .bar:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .bar-open:nth-child(3) {
+        transform: rotate(45deg) translate(-7px, -6px);
+    }
+    
+    .overlay {
+        display: none;
+        position: fixed;
+        inset-block-start: 0; /* Top */
+        inset-inline-start: 0; /* Left */
+        inline-size: 100%; /* Width */
+        block-size: 100%; /* Height */
+        background-color: rgba(0, 0, 0, 0.5); /* Overlay color and transparency */
+        z-index: 1;
+    }
+    
+    .overlay-open {
+        display: block;
+    }
+    
+    /* Media query for smaller screens (e.g., mobile) */
+    @media screen and (max-inline-size: 768px) {
+        .header {
+            flex-direction: column; /* Stack items vertically on smaller screens */
+        }
+    
+        .overlay {
+            display: none; /* Hide the overlay on larger screens */
+        }
+    }

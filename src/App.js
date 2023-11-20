@@ -21,6 +21,13 @@ function App() {
         </a>
       </header>
     </div>
+  import button
+    function button ()
+  return (
+    <div class="button">
+    <button>My Profile</button>
+  <button>My Profile</button>
+    </div>
   );
 }
 

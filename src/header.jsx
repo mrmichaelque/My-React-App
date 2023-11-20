@@ -1,6 +1,6 @@
 // Header.js
-import 'styles/Header.scss'
-import React, { useState } from 'react';
+import { useState } from 'react';
+import 'styles/Header.scss';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

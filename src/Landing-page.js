@@ -1,7 +1,7 @@
 import logo from 'client/public'; // Import or define the path to your logo
 import Button from './components/Button.jsx'; // Corrected the import statement
 import './styles/App.scss'; // Adjust the path to your styles
-import Footer from './Footer.jsx';
+
 /**
  * Renders the main App component.
  * @returns {JSX.Element} The rendered App component.

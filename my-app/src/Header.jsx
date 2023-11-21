@@ -1,13 +1,11 @@
 // Header.js
 import { useState } from 'react';
-import 'styles/Header.scss';
-
+import "./header.scss";
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
+const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+  // ... (previous code)
 
   return (
     <header className={`header ${isMenuOpen ? 'menu-open' : ''}`}>
@@ -15,6 +13,7 @@ const Header = () => {
         <img src="/path/to/your/logo.png" alt="Logo" className="logo" />
       </div>
       <div className="menu-icon" onClick={toggleMenu}>
+        {/* Menu items */}
         <div className={`bar ${isMenuOpen ? 'bar-open' : ''}`}>Explore</div>
         <div className={`bar ${isMenuOpen ? 'bar-open' : ''}`}>Learn</div>
         <div className={`bar ${isMenuOpen ? 'bar-open' : ''}`}>Engage</div>
@@ -23,16 +22,5 @@ const Header = () => {
       </div>
       <div className={`overlay ${isMenuOpen ? 'overlay-open' : ''}`} onClick={toggleMenu} />
     </header>
-      <script>
-    // JavaScript function to toggle the dropdown menu and overlay
-    function toggleDropdown() {
-      var dropdownMenu = document.getElementById('dropdownMenu');
-      var overlay = document.getElementById('overlay');
-      dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
-      overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
-    }
-  </script>
   );
-};
-
-export default Header
+}

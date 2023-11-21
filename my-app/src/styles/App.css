@@ -1,0 +1,166 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.header {
+  // Add your styles here
+}
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background-color: #3498db; /* Header background color */
+      color: #fff; /* Text color */
+      block-size: 150px; /* Height */
+      position: relative;
+  }
+  
+  .logo {
+      block-size: 100%; /* Height */
+      inline-size: auto; /* Width */
+  }
+  
+  .menu-icon {
+      cursor: pointer;
+  }
+  
+  .bar {
+      block-size: 4px; /* Height */
+      inline-size: 30px; /* Width */
+      background-color: #fff;
+      margin: 6px 0;
+      transition: transform 0.3s;
+  }
+  
+  .bar-open {
+      transform: rotate(-45deg) translate(-7px, 6px);
+  }
+  
+  .menu-open .bar:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .bar-open:nth-child(3) {
+      transform: rotate(45deg) translate(-7px, -6px);
+      color: rgba(255, 255, 255, 0.7); /* Change color on hover */
+  }
+  
+  .overlay {
+      display: none;
+      position: fixed;
+      inset-block-start: 0; /* Top */
+      inset-inline-start: 0; /* Left */
+      inline-size: 100%; /* Width */
+      block-size: 100%; /* Height */
+      background-color: rgba(0, 0, 0, 0.5); /* Overlay color and transparency */
+      z-index: 1;
+  }
+  
+  .overlay-open {
+      display: block;
+  }
+      .dropdown-item {
+    margin-left: 20px;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+color: #fff;
+text-decoration: none;
+display: block;
+transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
+
+.dropdown-item:hover {
+background-color: rgba(106, 125, 166); /* Change background color on hover */
+padding-left: 20px;
+border-radius: 50px; /* Add border radius on hover */
+}
+
+.dropdown-item:active {
+background-color: rgba(77, 53, 91); /* Change background color on press */
+}
+  /* Media query for responsiveness */
+  @media only screen and (max-width: 768px) {
+    .header {
+      padding: 0 10px; /* Adjust padding for smaller screens */
+    }
+
+    .dropdown-menu {
+      width: 100%;
+    }
+
+    .dropdown-item {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+  /* Media query for smaller screens (e.g., mobile) */
+  @media screen and (max-inline-size: 768px) {
+      .header {
+          flex-direction: column; /* Stack items vertically on smaller screens */
+      }
+  
+      .overlay {
+          display: none; /* Hide the overlay on larger screens */
+      }
+  }
+.App-link {
+color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+}
+
+
+
+    // JavaScript function to toggle the dropdown menu and overlay
+    function toggleDropdown() {
+      var dropdownMenu = document.getElementById('dropdownMenu');
+      var overlay = document.getElementById('overlay');
+      dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+      overlay.style.display = (overlay.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+  );
+};
+
+export default Header

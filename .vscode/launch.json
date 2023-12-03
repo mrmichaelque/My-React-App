@@ -7,11 +7,15 @@
             "runtimeArgs": [
                 "--remote-debugging-port=9222"
             ],
-            "url": "c:\\Users\\Michael Que\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.3\\out\\startpage\\index.html", // Provide your project's url to finish configuring
-            "presentation": {
-                "hidden": true
-            }
-        },
+            {
+            "urls": [
+                  "c:\\Users\\Michael Que\\.vscode\\extensions\\ms-edgedevtools.vscode-edge-devtools-2.1.3\\out\\startpage\\index.html",
+                  "https://github.com/mrmichaelque/My-React-App/"
+                ],
+                "presentation": {
+                  "hidden": true
+                }
+              }
         {
             "type": "pwa-msedge",
             "name": "Launch Microsoft Edge in headless mode",

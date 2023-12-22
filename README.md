@@ -49,8 +49,8 @@
   <div class="content">
     <h1>Michael Que</h1>
     <p><span class="pin-icon"></span>San Francisco, California</p>
-    <a href="profile.html" class="btn">My Profile</a>
-    <a href="projects.html" class="btn">The Projects</a>
+    <a href=""https:\\www.workingqueue.com\MyProfile" class="btn">My Profile</a>
+    <a href="https:\\www.workingqueue.com\TheProjects" class="btn">The Projects</a>
   </div>
 </body>
 </html>

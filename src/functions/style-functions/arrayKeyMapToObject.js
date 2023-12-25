@@ -8,7 +8,8 @@ const arrayKeyMapToObject = input => {
       if (!objectToOpen) {
         return;
       }
-      Object.keys(objectToOpen).map(key => {
+
+      Object.keys(objectToOpen).forEach(key => {
         if (key === undefined) {
           return;
         } else if (typeof setOpenObjectTo[key] === "object") {

@@ -8,7 +8,7 @@ const Stack = createStackNavigator();
 const DesignDocumentationStack = () => {
   return (
     <Stack.Navigator>
-      <Stack.Screen name="DesignDocumentationStac" component={DesignDocumentationStac} />
+      <Stack.Screen name="DesignDocumentationStack" component={DesignDocumentationStack} />
     </Stack.Navigator>
   );
 };

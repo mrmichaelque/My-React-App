@@ -1,0 +1,28 @@
+import Theme from './core':
+({
+
+.SearchBar.css': {
+
+    .list {
+  margin-top: 20px;
+}
+
+.list-item {
+  margin-bottom: 5px;
+}
+
+.Button.ClearSearch:
+
+.SearchBar() {
+    const [query, setQuery] = useState('');
+    return (
+        <input
+            type="text"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search..."
+        />
+    );
+}
+
+export default SearchBar;
